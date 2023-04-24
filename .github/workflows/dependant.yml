@@ -1,0 +1,22 @@
+name: Dependant
+
+on: push
+
+jobs:
+  ubuntu:
+    runs-os: ubuntu-latest
+    steps:
+    - run: date
+  windows:
+    runs-os: windows-latest
+    steps:
+    - run: date
+  macos:
+    runs-os: macos-latest
+    steps:
+    - run: date
+  depends:
+    needs: [ubuntu, windows, macos]
+    runs-os: macos-latest
+    steps:
+    - run: date
