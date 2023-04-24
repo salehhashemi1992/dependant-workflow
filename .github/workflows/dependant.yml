@@ -8,6 +8,7 @@ jobs:
     steps:
       - run: date
   windows:
+    needs: [ macos ]
     runs-on: windows-latest
     steps:
       - run: date
