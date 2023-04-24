@@ -4,19 +4,19 @@ on: push
 
 jobs:
   ubuntu:
-    runs-os: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-    - run: date
+      - run: date
   windows:
-    runs-os: windows-latest
+    runs-on: windows-latest
     steps:
-    - run: date
+      - run: date
   macos:
-    runs-os: macos-latest
+    runs-on: macos-latest
     steps:
-    - run: date
+      - run: date
   depends:
-    needs: [ubuntu, windows, macos]
-    runs-os: macos-latest
+    needs: [ ubuntu, windows, macos ]
+    runs-on: macos-latest
     steps:
-    - run: date
+      - run: date
