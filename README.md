@@ -1,2 +1,2 @@
 # dependant-workflow
-This is a sample workflow.
+The project contains a sample workflow file that demonstrates how to use the depends feature in GitHub Actions to specify a job's dependency on the successful completion of other jobs. The workflow includes three jobs that run in parallel on Ubuntu, Windows, and macOS, respectively. Once all three jobs complete successfully, a fourth job will run on the latest version of macOS. The workflow simply runs the date command in each job, which outputs the current date and time.
